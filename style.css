@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #0052cc;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#seguro-section {
+    background-color: #e3f2fd;
+    border: 2px solid #0052cc;
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0052cc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0052cc;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0066ff;
+}
+
+
+#cep-result, #fipe-result, #seguro-result {
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: #333;
+    text-align: left;
+    line-height: 1.6;
+}
+
+
+#seguro-result.aprovado {
+    background-color: #e0f7e9;
+    border-left: 5px solid #4CAF50;
+}
+
+#seguro-result.rejeitado {
+    background-color: #fdecea;
+    border-left: 5px solid #ff4d4f;
+}
+
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        width: 90%;
+    }
+}
